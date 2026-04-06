@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otim's AI Email Reader</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <aside class="sidebar">
+        <h2>AI Email Reader</h2>
+        <nav>
+          <div class="nav-item active">
+            <i class="ph ph-envelope"></i> Inbox
+          </div>
+          <div class="nav-item"><i class="ph ph-star"></i> Starred</div>
+          <div class="nav-item">
+            <i class="ph ph-paper-plane-tilt"></i> Sent
+          </div>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-bar">
+          <div class="search-container">
+            <i class="ph ph-magnifying-glass"></i>
+            <input
+              type="text"
+              id="ai-input"
+              placeholder="Ask the AI to find emails (e.g., 'Show me eBay deals')"
+            />
+            <button id="send-btn">Ask AI</button>
+          </div>
+        </header>
+
+        <section class="email-view">
+          <div id="status-message" class="status">
+            Type a request to start...
+          </div>
+          <div id="email-list" class="email-list"></div>
+        </section>
+      </main>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
