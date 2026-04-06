@@ -8,7 +8,11 @@ keys/
 venv/
 .venv/
 env/
-
+bin/ 
+lib/
+include/
+client_secret.json
+.adk
 # Python
 __pycache__/
 *.py[oc]
